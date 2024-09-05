@@ -1,0 +1,31 @@
+{
+    "tags": [
+        "beats_input_codec_plain_applied"
+    ],
+    "@timestamp": "2024-09-05T18: 24: 47.070Z",
+    "message": "2024/09/05 18: 24: 46 main.go: 66: HomeHandler: Error fetching products - Get \"http: //productlist:8081/products\": dial tcp: lookup productlist on 127.0.0.11: 53: no such host",
+    "host": {
+        "name": "393a9996d03e"
+    },
+    "@version": "1",
+    "log": {
+        "file": {
+            "path": "/logs/server.log"
+        },
+        "offset": 9286
+    },
+    "agent": {
+        "hostname": "393a9996d03e",
+        "version": "7.17.13",
+        "id": "834636ab-ae0e-4994-bb56-55817bfd3bf3",
+        "name": "393a9996d03e",
+        "ephemeral_id": "e04c698c-187a-4b80-aa7b-f6e990c9bc12",
+        "type": "filebeat"
+    },
+    "input": {
+        "type": "log"
+    },
+    "ecs": {
+        "version": "1.12.0"
+    }
+}

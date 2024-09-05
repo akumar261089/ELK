@@ -1,0 +1,33 @@
+{
+    "keywords": {
+        "auth": {
+            "logfile": "/logs/auth.log",
+            "healthcheck": "curl http://localhost:8082",
+            "Success": "Authentication server started at http://localhost:8082",
+            "Actions": [
+                {"action": "systemctl restart auth-service", "result": "Authentication server started at http://auth:8082"},
+                {"action": "docker restart auth-container", "result": "Authentication server started at http://auth:8082"}
+            ]
+        },
+        "userinfo": {
+            "Success": "Authentication server started at http://localhost:8082",
+            "action1": "",
+            "action2": "",
+            "action3": ""
+        },
+        "productlist": {
+            "RestartLog": "Authentication server started at http://localhost:8082",
+            "SuccessLog": "Products list served",
+            "Validate":"",
+            "action1": "",
+            "action2": "",
+            "action3": ""
+        },
+        "webserver": {
+            "Success": "Authentication server started at http://localhost:8082",
+            "action1": "",
+            "action2": "",
+            "action3": ""
+        }
+    }
+}
