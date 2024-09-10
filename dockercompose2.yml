@@ -22,7 +22,7 @@ services:
 
   logstash:
     build:
-      context: ./elasticSearch
+      context: ./logstash
       dockerfile: Dockerfile
     image: ls
     container_name: logstash
